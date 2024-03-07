@@ -20,6 +20,7 @@ export const AlbumName = ({ name, external_urls }) => {
   );
 };
 
+// Expected data type.
 AlbumName.propTypes = {
   name: PropTypes.string.isRequired,
   external_urls: PropTypes.object.isRequired,
