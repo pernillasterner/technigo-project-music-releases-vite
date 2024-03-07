@@ -16,5 +16,5 @@ export const CoverImage = ({ images }) => {
 };
 
 CoverImage.propTypes = {
-  images: PropTypes.object.isRequired,
+  images: PropTypes.array.isRequired,
 };

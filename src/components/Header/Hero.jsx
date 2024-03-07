@@ -23,6 +23,6 @@ export const Hero = ({ images, artists }) => {
 };
 
 Hero.propTypes = {
-  artists: PropTypes.object.isRequired,
+  artists: PropTypes.array.isRequired,
   images: PropTypes.object.isRequired,
 };

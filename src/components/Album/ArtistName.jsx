@@ -35,5 +35,5 @@ export const ArtistName = ({ artists }) => {
 };
 
 ArtistName.propTypes = {
-  artists: PropTypes.object.isRequired,
+  artists: PropTypes.array.isRequired,
 };
