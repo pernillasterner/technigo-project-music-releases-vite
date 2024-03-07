@@ -17,5 +17,5 @@ export const CoverImage = ({ images }) => {
 
 // Expected data type.
 CoverImage.propTypes = {
-  images: PropTypes.array.isRequired,
+  images: PropTypes.string.isRequired,
 };
