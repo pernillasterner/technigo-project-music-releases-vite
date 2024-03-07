@@ -15,7 +15,7 @@ export const ArtistName = ({ artists }) => {
   const renderArtistName = artists.map((artist, i) => (
     <React.Fragment key={i}>
       {allArtists > 1 && allArtists < 3 && i !== 0 && (
-        <span className="separator"> & </span>
+        <span className="separator"> &amp; </span>
       )}
       {allArtists > 2 && i !== 0 && <span className="separator">,</span>}
 
@@ -34,6 +34,7 @@ export const ArtistName = ({ artists }) => {
   return <>{artists && <>{renderArtistName}</>}</>;
 };
 
+// Expected data type.
 ArtistName.propTypes = {
   artists: PropTypes.array.isRequired,
 };
