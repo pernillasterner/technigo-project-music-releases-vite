@@ -19,12 +19,12 @@
 
 .album-title {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--clr-white);
 }
 
 .artist-name {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--clr-artist-title);
   display: inline;
 }
@@ -80,16 +80,16 @@
 }
 
 .coverImage .play {
-  width: 50px;
+  width: 70px;
   z-index: 100;
 }
 
 .coverImage .dots {
-  right: 50px;
+  right: 100px;
 }
 
 .coverImage .heart {
-  left: 50px;
+  left: 100px;
 }
 
 /* Tablet: Adjust grid to have 2 columns */
