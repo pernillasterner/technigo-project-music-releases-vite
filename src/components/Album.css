@@ -1,6 +1,5 @@
 .section__album {
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   gap: 20px;
 }
@@ -14,17 +13,17 @@
   padding-bottom: 1px;
   border-bottom: 2px solid transparent;
   display: block;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 .album-title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   color: var(--clr-white);
 }
 
 .artist-name {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--clr-artist-title);
   display: inline;
 }
@@ -40,7 +39,6 @@
 }
 
 .coverImage {
-  /* min-width: 300px; */
   position: relative;
   display: flex;
   justify-content: center;
