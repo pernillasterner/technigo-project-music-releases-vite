@@ -1,6 +1,6 @@
-import { Album } from "./components/Album/Album";
+import { Album } from "./components/Album";
 import { Hero } from "./components/Header/Hero";
-import { Playlist } from "./components/Header/Playlist";
+import { Playlist } from "./components/Playlist";
 import { albums } from "./data/albums.json";
 
 export const App = () => {
