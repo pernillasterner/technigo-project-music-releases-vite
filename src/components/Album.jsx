@@ -1,8 +1,8 @@
 import "./Album.css";
-import { AlbumName } from "./AlbumName";
-import { ArtistName } from "./ArtistName";
-import { CoverImage } from "./CoverImage";
-import { albums } from "../../data/albums.json";
+import { AlbumName } from "./Album/AlbumName";
+import { ArtistName } from "./Album/ArtistName";
+import { CoverImage } from "./Album/CoverImage";
+import { albums } from "../data/albums.json";
 
 export const Album = () => {
   const renderAlbums = albums.items.map(
