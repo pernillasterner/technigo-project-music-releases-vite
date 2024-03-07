@@ -1,24 +1,19 @@
 import { Album } from "./components/Album/Album";
-import { Header } from "./components/Header/Header";
-import albumData from "./data.json";
+import { Hero } from "./components/Header/Hero";
+import { albums } from "./data/albums.json";
 
 export const App = () => {
-  const albums = albumData.albums.items;
+  const renderHero = albums.items
+    .slice(10, 11)
+    .map(({ id, images, artists }) => (
+      <Hero key={id} images={images[0]} artists={artists} />
+    ));
 
   return (
     <main>
-      <Header />
+      {renderHero}
       <section className="section__album">
-        {albums &&
-          albums.map(({ id, name, artists, external_urls, images }) => (
-            <Album
-              key={id}
-              name={name}
-              artists={artists}
-              images={images}
-              external_urls={external_urls}
-            />
-          ))}
+        <Album />
       </section>
     </main>
   );
