@@ -1,5 +1,6 @@
 import { Album } from "./components/Album/Album";
 import { Hero } from "./components/Header/Hero";
+import { Playlist } from "./components/Header/Playlist";
 import { albums } from "./data/albums.json";
 
 export const App = () => {
@@ -12,6 +13,9 @@ export const App = () => {
   return (
     <main>
       {renderHero}
+      <section className="secion__playlist">
+        <Playlist />
+      </section>
       <section className="section__album">
         <Album />
       </section>
