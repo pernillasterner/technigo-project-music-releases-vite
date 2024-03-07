@@ -3,10 +3,6 @@
   height: 600px;
   position: relative;
   margin-bottom: 100px;
-  /* background-image: url("/src/assets/hero/red-eyed-piece.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -130px; */
 }
 
 .hero-container::before {
