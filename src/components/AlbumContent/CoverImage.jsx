@@ -9,7 +9,7 @@ export const CoverImage = ({ images }) => {
 
   return (
     <div className="coverImage">
-      <PlayIcons />
+      {/* <PlayIcons /> */}
       <img src={coverImage.imgUrl} alt="Cover album image" />
     </div>
   );

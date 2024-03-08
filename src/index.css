@@ -100,3 +100,9 @@ img {
   width: 100%;
   display: block;
 }
+
+@media (max-width: 1400px) {
+  main {
+    padding: 0 1.5em;
+  }
+}

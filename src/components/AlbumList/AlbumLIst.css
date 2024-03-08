@@ -90,23 +90,40 @@
 }
 
 .section__album .coverImage .dots {
-  right: 100px;
+  right: 80px;
 }
 
 .section__album .coverImage .heart {
-  left: 100px;
+  left: 80px;
 }
 
 /* Tablet: Adjust grid to have 2 columns */
-@media (max-width: 1600px) {
-  .section__album {
+@media (max-width: 1400px) {
+  .album-container,
+  .single-container {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  .section__album .coverImage .dots {
+    right: 120px;
+  }
+
+  .section__album .coverImage .heart {
+    left: 120px;
   }
 }
 
 /* Mobile: Adjust grid to have 1 column */
-@media (max-width: 640px) {
-  .section__album {
+@media (max-width: 740px) {
+  .album-container,
+  .single-container {
     grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+  .section__album .coverImage .dots {
+    right: 80px;
+  }
+
+  .section__album .coverImage .heart {
+    left: 80px;
   }
 }

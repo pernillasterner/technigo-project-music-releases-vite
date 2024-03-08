@@ -38,3 +38,13 @@
 .hero-text .listeners {
   font-weight: 600;
 }
+
+@media (max-width: 900px) {
+  .hero-container {
+    height: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+}

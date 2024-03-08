@@ -4,7 +4,7 @@ import { ArtistName } from "../AlbumContent/ArtistName";
 import { CoverImage } from "../AlbumContent/CoverImage";
 import { albums } from "../../data/albums.json";
 
-export const Album = () => {
+export const AlbumList = () => {
   // Seperate singles and albums in two seperate arrays
   const allSingles = albums.items.filter(
     (album) => album.album_type === "single"
@@ -27,7 +27,7 @@ export const Album = () => {
     <section className="section__album">
       <div className="single-wrapper">
         <h2>New singles</h2>
-        {/* Passing single array to renderAlbums */}
+        {/* Passing single array to renderSingles */}
         <div className="single-container">{renderAlbums(allSingles)}</div>
       </div>
 

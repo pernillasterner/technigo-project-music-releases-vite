@@ -3,8 +3,9 @@ import { playlists } from "../../data/playlists.json";
 import { CoverImage } from "../AlbumContent/CoverImage";
 import { AlbumName } from "../AlbumContent/AlbumName";
 import { AlbumDescription } from "../AlbumContent/AlbumDescription";
+import { PlayIcons } from "../AlbumContent/PlayIcons";
 
-export const Playlist = () => {
+export const PlayList = () => {
   const imageUrl = playlists.items[2].images[0].url;
   const artistName = playlists.items[2].name;
 
@@ -17,6 +18,7 @@ export const Playlist = () => {
           <AlbumName name={name} external_urls={external_urls} />
           <AlbumDescription description={description} />
         </div>
+        <PlayIcons />
       </div>
     )
   );
