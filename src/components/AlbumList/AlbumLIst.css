@@ -1,8 +1,17 @@
 .section__album {
   margin-top: 50px;
+}
+
+.single-container,
+.album-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   gap: 20px;
+}
+
+.single-wrapper,
+.album-wrapper {
+  margin-top: 100px;
 }
 
 .section__album .album-title,
