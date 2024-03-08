@@ -1,9 +1,8 @@
-import "./Playlist.css";
-import { playlists } from "../data/playlists.json";
-import { CoverImage } from "./Album/CoverImage";
-import { AlbumName } from "./Album/AlbumName";
-import { AlbumDescription } from "./Album/AlbumDescription";
-import { PlayIcons } from "./Album/PlayIcons";
+import "./PlayList.css";
+import { playlists } from "../../data/playlists.json";
+import { CoverImage } from "../AlbumContent/CoverImage";
+import { AlbumName } from "../AlbumContent/AlbumName";
+import { AlbumDescription } from "../AlbumContent/AlbumDescription";
 
 export const Playlist = () => {
   const imageUrl = playlists.items[2].images[0].url;
