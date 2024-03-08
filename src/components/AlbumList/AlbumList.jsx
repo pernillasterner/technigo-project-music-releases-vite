@@ -5,6 +5,7 @@ import { CoverImage } from "../AlbumContent/CoverImage";
 import { albums } from "../../data/albums.json";
 
 export const Album = () => {
+  console.log(albums);
   const renderAlbums = albums.items.map(
     ({ id, name, images, artists, external_urls }) => (
       <div key={id} className="album__list">
@@ -14,5 +15,6 @@ export const Album = () => {
       </div>
     )
   );
+
   return <section className="section__album">{renderAlbums}</section>;
 };

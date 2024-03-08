@@ -23,14 +23,11 @@
   color: var(--clr-white);
 }
 
-.section__album .artist-name {
+.section__album .artist-name,
+.section__album .separator {
   font-size: 14px;
   color: var(--clr-artist-title);
   display: inline;
-}
-
-.separator {
-  color: var(--clr-artist-title);
 }
 
 .section__album .artist-name:hover,
