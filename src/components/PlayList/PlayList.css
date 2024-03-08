@@ -26,6 +26,7 @@
   overflow: hidden;
   margin-left: 10px;
   position: relative;
+  border-radius: var(--radius);
 }
 
 .new-release::before {
@@ -78,6 +79,14 @@
   margin-left: auto;
 }
 
+.playlist-items {
+  border-radius: var(--radius);
+}
+
+.playlist-items a {
+  font-size: 14px;
+}
+
 .playlist-item .play-icon {
   cursor: pointer;
   width: 30px;
@@ -115,10 +124,6 @@
 .playlist-info .description {
   font-size: 14px;
   color: var(--clr-artist-title);
-}
-
-.playlist-items a {
-  font-size: 14px;
 }
 
 .playlist-icons {
